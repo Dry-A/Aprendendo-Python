@@ -1,4 +1,4 @@
-age =19
+age =45
 sexo = 'M'
 
 if age >=18:
@@ -7,3 +7,10 @@ if age >=18:
         print("Alistamento obrigatório.")
 else:
     print("Você é menor de idade.")
+    
+    
+    
+if age>40:
+    print("Precisa de exame da próstata")
+    
+    

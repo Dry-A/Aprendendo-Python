@@ -21,18 +21,35 @@ if nome =='' or idade=='':
     print('Desculpe, você deixou campos vazios.')
     exit()
 
-nome_invertido = nome[::-1]
-numero_letras = len(nome)
 
 print(f'Seu nome é {nome}')
-print(f'Seu nome invertido é {nome_invertido}')
-
+print(f'Seu nome invertido é {nome[::-1]}')
 if ' ' in nome:
     print('Seu nome tem espaço')
 else:
-    print('Seu nome não tem espaço')
-    
-print(f'Seu nome tem {numero_letras} letras.')
+    print('Seu nome não tem espaço')   
+print(f'Seu nome tem {len(nome)} letras.')
 print(f'A primeira letra do seu nome é {nome[0]}.')
 print(f'A ultima letra do seu nome é {nome[-1]}.')
+
+#outro moddo de fazer:
+
+nome_2 = input('Digite seu nome_2: ')
+
+idade_2 = input('Digite sua idade_2: ')
+
+#string vaxia é falsy
+if nome_2 and idade_2:
+    print(f'Seu nome é {nome_2}')
+    print(f'Seu nome invertido é {nome_2[::-1]}')
+    if ' ' in nome_2:
+        print('Seu nome tem espaço')
+    else:
+        print('Seu nome não tem espaço')   
+    print(f'Seu nome tem {len(nome_2)} letras.')
+    print(f'A primeira letra do seu nome é {nome_2[0]}.')
+    print(f'A ultima letra do seu nome é {nome_2[-1]}.')
+else: 
+    print('Desculpe, você deixou campos vazios.')
+          
 

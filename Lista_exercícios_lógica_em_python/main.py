@@ -100,9 +100,57 @@ def calcula_percentual_desconto(lista_carros):
     return novo_valor
 
          
+   #24
+def avalia_numero(lista):
+    
+    for numero in lista:
+        if numero < 0:
+            print('Número negativo')
+        elif numero>0:
+            print('Número positivo')
+        else:
+            print('Número Zero')
             
+#26
+def escrever_por_extenso(numero):
+    if numero==1:
+        print('Um')
+    elif numero==2:
+        print('dois')
+    elif numero==3:
+        print('três')
+    elif numero ==4:
+        print('Quatro')
+    elif numero ==5:
+        print('Cinco')
+    else:
+        print('número inválido.')
+
+#30
+def identifica_maior_numero(lista_tripla):
+    lista_tripla.sort()
+    print(lista_tripla)
+    
+    
+lista_nova = [ 14,8,52]
+identifica_maior_numero(lista_nova)
+                    
             
+def calcula_pagamento():
+    
+    nivel = input('Digite seu nível: ')
+    horas_aula = int(input('Digite quantidade de horas trabalhada neste mês: '))
+
+    if nivel == '1':
+        valor_salario = horas_aula *12
+        print( f'R$ {valor_salario}') 
+    elif nivel =='2':
+        valor_salario = horas_aula*17
+        print(f'R$ {valor_salario}') 
+    elif nivel=='3':
+        valor_salario = horas_aula*25
+        print(f'R$ {valor_salario}') 
         
-            
+          
         
             
